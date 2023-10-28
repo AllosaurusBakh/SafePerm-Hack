@@ -1,0 +1,16 @@
+@import 'fonts.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MonoRegular';
+}
+
+body {
+    background: #1e1e1e;
+}
+
+#root {
+    height: 100vh;
+}
