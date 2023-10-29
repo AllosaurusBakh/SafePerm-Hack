@@ -3,8 +3,8 @@
 .btn {
     font-size: 24px;
     color: $white;
-    background-color: $backgroundCl;
-    border: 2px solid $colorCompany;
+    background-color: $darkBackgroundColor;
+    border: 2px solid $secondMainColor;
     border-radius: 10px;
     padding: 10px;
     padding-left: 20px;
@@ -13,9 +13,9 @@
     cursor: pointer;
 
     &:hover {
-        background-color: $colorCompany;
-        border: 2px solid $colorCompany;
-        color: $white;
+        background-color: $secondMainColor;
+        border: 2px solid $secondMainColor;
+        color: $darkBackgroundColor;
         transition: 0.3s;
     }
 }

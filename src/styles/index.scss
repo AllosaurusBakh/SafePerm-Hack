@@ -1,4 +1,5 @@
 @import 'fonts.scss';
+@import 'variables.scss';
 
 * {
     margin: 0;
@@ -9,6 +10,22 @@
 
 body {
     background: #1e1e1e;
+    color: $white;
+}
+
+h2 {
+    text-transform: uppercase;
+
+    &.black {
+        color: $darkBackgroundColor;
+    }
+
+    &.grad {
+        background: $mainColor;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }
 
 #root {

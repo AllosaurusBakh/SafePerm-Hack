@@ -1,4 +1,4 @@
-import { YMaps, Map, Polygon } from '@pbe/react-yandex-maps';
+import { YMaps, Map, Polygon, ZoomControl } from '@pbe/react-yandex-maps';
 import coordinatesOfPerm from './../../coordinatesOfPerm';
 import './style.scss';
 
@@ -56,12 +56,16 @@ const MapYa = (props: MapYaProps): JSX.Element => {
                     defaultState={{
                         center: [59, 56.068261],
                         zoom: 7,
-                        behaviors: ['stroke']
+                        controls: [],
+                        // controls: 'zoomControl'
+                        // behaviors: ['stroke']
                     }}
                     options={{
-                        maxZoom: 7,
+                        maxZoom: 8,
                         minZoom: 7
-                    }}>
+                    }}
+                >
+                    <ZoomControl />
                     <Polygon
                         geometry={[coordinatesOfPerm]}
                         options={{

@@ -1,6 +1,6 @@
 import React from 'react';
-import './style.scss';
 import classNames from 'classnames';
+import './style.scss';
 
 type ButtonProps = {
     children: React.ReactNode,
@@ -13,7 +13,6 @@ type ButtonProps = {
 const Button = (props: ButtonProps): JSX.Element => {
 
     const classes = classNames(
-        'btn',
         props.className,
         'active-' + props.active.toString(),
     );
